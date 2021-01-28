@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: "1",
     name: "Whistle, Figure With Peaked Hat",
     image: "/images/whistle1.jpg",
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: "2",
     name: "Whistle, Figure With Head On Head",
     image: "/images/whistle2.jpg",
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 1,
   },
   {
-    _id: "3",
     name: "Whistle, Double Figure",
     image: "/images/whistle3.jpg",
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 5,
   },
   {
-    _id: "4",
     name: "Whistle, Bird",
     image: "/images/whistle4.jpg",
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 2,
   },
   {
-    _id: "5",
     name: "Drum, Monkey Figures",
     image: "/images/drum1.jpg",
     description:
@@ -65,7 +60,6 @@ const products = [
     numReviews: 6,
   },
   {
-    _id: "6",
     name: "Figure Drum",
     image: "/images/drum2.jpg",
     description:
@@ -78,7 +72,6 @@ const products = [
     numReviews: 13,
   },
   {
-    _id: "7",
     name: "Monastery Bell",
     image: "/images/bell.jpg",
     description:
@@ -92,5 +85,5 @@ const products = [
   },
 ];
 
-// export default products
 module.exports = products;
+// export default products;
