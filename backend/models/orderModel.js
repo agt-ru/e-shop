@@ -1,5 +1,5 @@
-const mongoose = require("mongoose");
-// import mongoose from "mongoose";
+// const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const orderSchema = mongoose.Schema(
   {
@@ -47,6 +47,11 @@ const orderSchema = mongoose.Schema(
       required: true,
       default: 0.0,
     },
+    itemsPrice: {
+      type: Number,
+      required: true,
+      default: 0.0
+    },
     totalPrice: {
       type: Number,
       required: true,
@@ -76,5 +81,5 @@ const orderSchema = mongoose.Schema(
 
 const Order = mongoose.model("Order", orderSchema);
 
-module.exports = Order;
-// export default Order;
+// module.exports = Order;
+export default Order;
