@@ -1,17 +1,4 @@
 // put some initial data in the db
-
-// const mongoose = require("mongoose");
-// const dotenv = require("dotenv");
-// const colors = require("colors");
-
-// const users = require("./data/users");
-// const products = require("./data/products");
-// const User = require("./models/userModel");
-// const Product = require("./models/productModel");
-// const Order = require("./models/orderModel");
-// const connectDB = require("./config/db");
-
-
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import colors from "colors";

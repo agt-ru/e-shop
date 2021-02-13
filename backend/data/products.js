@@ -9,7 +9,7 @@ const products = [
     price: 46.54,
     countInStock: 3,
     rating: 5.0,
-    numReviews: 8,
+    numReviews: 0,
   },
   {
     name: "Whistle, Figure With Head On Head",
@@ -21,7 +21,7 @@ const products = [
     price: 675.37,
     countInStock: 1,
     rating: 2.9,
-    numReviews: 1,
+    numReviews: 0,
   },
   {
     name: "Whistle, Double Figure",
@@ -33,7 +33,7 @@ const products = [
     price: 19.75,
     countInStock: 0,
     rating: 4.3,
-    numReviews: 5,
+    numReviews: 0,
   },
   {
     name: "Whistle, Bird",
@@ -45,7 +45,7 @@ const products = [
     price: 24.58,
     countInStock: 0,
     rating: 2.7,
-    numReviews: 2,
+    numReviews: 0,
   },
   {
     name: "Drum, Monkey Figures",
@@ -57,7 +57,7 @@ const products = [
     price: 500.22,
     countInStock: 8,
     rating: 3.9,
-    numReviews: 6,
+    numReviews: 0,
   },
   {
     name: "Figure Drum",
@@ -69,7 +69,7 @@ const products = [
     price: 866.78,
     countInStock: 12,
     rating: 2,
-    numReviews: 13,
+    numReviews: 0,
   },
   {
     name: "Monastery Bell",
@@ -81,9 +81,8 @@ const products = [
     price: 999.68,
     countInStock: 7,
     rating: 2.2,
-    numReviews: 4,
+    numReviews: 0,
   },
 ];
 
-// module.exports = products;
 export default products;
