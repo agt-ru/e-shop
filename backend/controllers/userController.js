@@ -118,6 +118,9 @@ const deleteUser = asyncHandler(async (req, res) => {
   const user = await User.findById(req.params.id);
 
   if (user) {
+    if (user._id.toString() === req.user._id.toString()) {
+      throw new Error("Can't delete self user");
+    }
     await user.remove();
     res.json({ message: "User removed" });
   } else {
@@ -147,6 +150,10 @@ const updateUser = asyncHandler(async (req, res) => {
   const user = await User.findById(req.params.id);
 
   if (user) {
+    if (user._id.toString() === req.user._id.toString() && !req.body.isAdmin) {
+      throw new Error("Can't mark yourself as non-admin");
+    }
+
     user.name = req.body.name || user.name;
     user.email = req.body.email || user.email;
     user.isAdmin = req.body.isAdmin; // boolean

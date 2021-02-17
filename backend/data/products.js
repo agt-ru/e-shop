@@ -8,7 +8,7 @@ const products = [
     category: "Antiques",
     price: 46.54,
     countInStock: 3,
-    rating: 5.0,
+    rating: 0,
     numReviews: 0,
   },
   {
@@ -20,7 +20,7 @@ const products = [
     category: "Antiques",
     price: 675.37,
     countInStock: 1,
-    rating: 2.9,
+    rating: 0,
     numReviews: 0,
   },
   {
@@ -31,8 +31,8 @@ const products = [
     brand: "Tembladera",
     category: "Antiques",
     price: 19.75,
-    countInStock: 0,
-    rating: 4.3,
+    countInStock: 6,
+    rating: 0,
     numReviews: 0,
   },
   {
@@ -44,7 +44,7 @@ const products = [
     category: "Antiques",
     price: 24.58,
     countInStock: 0,
-    rating: 2.7,
+    rating: 0,
     numReviews: 0,
   },
   {
@@ -56,7 +56,7 @@ const products = [
     category: "Antiques",
     price: 500.22,
     countInStock: 8,
-    rating: 3.9,
+    rating: 0,
     numReviews: 0,
   },
   {
@@ -68,7 +68,7 @@ const products = [
     category: "Antiques",
     price: 866.78,
     countInStock: 12,
-    rating: 2,
+    rating: 0,
     numReviews: 0,
   },
   {
@@ -80,7 +80,7 @@ const products = [
     category: "Antiques",
     price: 999.68,
     countInStock: 7,
-    rating: 2.2,
+    rating: 0,
     numReviews: 0,
   },
 ];
