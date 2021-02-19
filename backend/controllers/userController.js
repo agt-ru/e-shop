@@ -119,6 +119,7 @@ const deleteUser = asyncHandler(async (req, res) => {
 
   if (user) {
     if (user._id.toString() === req.user._id.toString()) {
+      res.status(400);
       throw new Error("Can't delete self user");
     }
     await user.remove();
@@ -151,6 +152,7 @@ const updateUser = asyncHandler(async (req, res) => {
 
   if (user) {
     if (user._id.toString() === req.user._id.toString() && !req.body.isAdmin) {
+      res.status(400);
       throw new Error("Can't mark yourself as non-admin");
     }
 

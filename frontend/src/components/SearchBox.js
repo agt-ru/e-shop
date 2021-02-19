@@ -1,8 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Form, Button } from "react-bootstrap";
 
-const SearchBox = ({ history }) => {
+const SearchBox = ({ history, location }) => {
   const [keyword, setKeyword] = useState("");
+
+  useEffect(() => {
+    if (
+      location.pathname.split("/")[1] !== "search" &&
+      location.pathname.split("/")[1] !== "product"
+    ) {
+      setKeyword("");
+    }
+  }, [location]);
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -21,6 +30,7 @@ const SearchBox = ({ history }) => {
         onChange={(e) => setKeyword(e.target.value)}
         placeholder="Search products..."
         className="mr-sm-2 ml-sm-5"
+        value={keyword}
       ></Form.Control>
       <Button type="submit" variant="outline-success" className="p-2">
         Search
