@@ -44,6 +44,7 @@ const ProductScreen = ({ match, history }) => {
     if (successProductReview) {
       setRating(0);
       setComment("");
+      dispatch(listProductDetails(match.params.id));
     }
     if (!product._id || product._id !== match.params.id) {
       dispatch(listProductDetails(match.params.id));
